@@ -426,9 +426,7 @@ const updateCompleteEmployeeDetails = (req, res) => {
         );
 
         if (index === -1) {
-            return res.status(404).send({
-                message: "Employee not found"
-            });
+            return res.status(404).send({ message: "Employee not found" });
         }
 
         const {
